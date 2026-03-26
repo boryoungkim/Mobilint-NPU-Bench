@@ -25,6 +25,6 @@ ln -s /path/to/your/mobilint_sdk mblt_sdk
 - [ ] **Utilization:** Real-time NPU core trace and memory bandwidth analysis.
 
 ## Working Docs
-* MBLT qbRuntime Basics: https://docs.google.com/document/d/1J5bnF1nCofTNZLQcuE07gODyuAcE_5T-ZChYrSLbMcM/edit?tab=t.0
 * MBLT NPU 아키텍쳐 분석 보고서: https://docs.google.com/document/d/1BwT-naDXaWztWFPwHC7gbHPZcozb236hEvuZXxecjcs/edit?tab=t.0
+* MBLT qbRuntime Basics: https://docs.google.com/document/d/1J5bnF1nCofTNZLQcuE07gODyuAcE_5T-ZChYrSLbMcM/edit?tab=t.0
 * MBLT ARIES SDK 환경설정: https://docs.google.com/document/d/1Xc6yHAVuKjlXiIOdFizZfIxF30SAjBZqUrSbdrXHhRQ/edit?tab=t.0
