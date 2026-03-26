@@ -16,7 +16,7 @@ endif
 
 TARGET = $(basename $(source))
 
-# 4. 빌드 규칙
+# 4. 빌드
 all: $(TARGET)
 
 $(TARGET): $(source)
