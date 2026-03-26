@@ -7,6 +7,28 @@ This repository contains benchmarking and analysis for **Mobilint NPU (Aries)**,
 * `models/`: (Ignored) Model files (.mxq) used for inference.
 * `mblt_sdk/`: (Ignored) Symbolic link to the Mobilint SDK.
 
+## ✨ Added Features from plain MBLT_SDK
+### 1. Unified Status Logging (`mblt_print_status.h`)
+Print NPU status whenever I want.
+
+```cpp
+#include "mblt_print_status.h"
+// MBLT-defined class - StatusClass sc;
+MBLT_PRINT_STATUS( sc );
+```
+
+### 2. Flexible Build System (Makefile)
+Each source directory (src/) contains a versatile Makefile that accepts a source argument. This allows you to compile and test different code variants instantly without modifying the build script.
+
+```bash
+# 1. Navigate to the target directory
+cd src/llama
+# 2. Build a specific source file (source=filename.cc)
+make source=llama.cc
+# 3. Execute the generated benchmark
+./llama
+```
+
 ## 🛠️ Environment Setup
 ### 1. Requirements
 * Mobilint SDK (Aries v1.1.0+)
@@ -21,7 +43,7 @@ ln -s /path/to/your/mobilint_sdk mblt_sdk
 
 ## Benchmarking Goals
 - [x] **ResNet50:** Basic NPU inference check execution information.
-- [ ] **Llama (LLM):** Quantization (8-bit vs 4-bit) performance comparison.
+- [ ] **Llama:** Quantization (8-bit vs 4-bit) performance comparison.
 - [ ] **Utilization:** Real-time NPU core trace and memory bandwidth analysis.
 
 ## Working Docs

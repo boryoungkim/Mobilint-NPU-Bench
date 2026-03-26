@@ -3,9 +3,13 @@ SDK_ROOT = ../../mblt_sdk/qbruntime/qbruntime
 INC_DIR  = $(SDK_ROOT)/include
 LIB_DIR  = $(SDK_ROOT)/lib
 
+# 에러 체크 헤더 위치 추가
+COMMON_INC = ../../include
+
+
 # 2. 컴파일러 및 옵션
 CXX      = g++
-CXXFLAGS = -O3 -std=c++17 -Wall -I$(INC_DIR) -I.
+CXXFLAGS = -O3 -std=c++17 -Wall -I$(INC_DIR) -I$(COMMON_INC) -I.
 LDFLAGS  = -L$(LIB_DIR) -Wl,-rpath,$(LIB_DIR)
 LDLIBS   = -lqbruntime
 
