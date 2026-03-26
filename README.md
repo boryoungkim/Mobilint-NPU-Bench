@@ -9,7 +9,7 @@ This repository contains benchmarking and analysis for **Mobilint NPU (Aries)**,
 
 ## ✨ Added Features from plain MBLT_SDK
 ### 1. Unified Status Logging (`mblt_print_status.h`)
-Print NPU status whenever I want.
+This utility simplifies debugging by mapping 66+ Mobilint StatusCode values to human-readable strings. It allows you to check the NPU status at any point in your code.
 
 ```cpp
 #include "mblt_print_status.h"
