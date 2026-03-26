@@ -1,4 +1,4 @@
-# Mobilint-NPU-Bench 🚀
+# Mobilint-NPU-Bench
 This repository contains benchmarking and analysis for **Mobilint NPU (Aries)**, focusing on performance optimization across various neural network architectures, from CNNs to LLMs.
 
 ## 📂 Project Structure
