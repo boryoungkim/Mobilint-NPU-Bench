@@ -7,7 +7,7 @@ This repository contains benchmarking and analysis for **Mobilint NPU (Aries)**,
 * `models/`: (Ignored) Model files (.mxq) used for inference.
 * `mblt_sdk/`: (Ignored) Symbolic link to the Mobilint SDK.
 
-## ✨ Added Features from plain MBLT_SDK
+## Added Features from plain MBLT_SDK
 ### 1. Unified Status Logging (`mblt_print_status.h`)
 This utility simplifies debugging by mapping 66+ Mobilint StatusCode values to human-readable strings. It allows you to check the NPU status at any point in your code.
 
